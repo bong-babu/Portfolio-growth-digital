@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Soumyadeep Kanjilal | Growth and Digital Marketing</title>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&amp;family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&amp;display=swap" rel="stylesheet">
+<style>
+:root { --ink: #181815; --ink-mid: #4a4a46; --ink-muted: #7a7a74; --surface: #f7f5f0; --card: #ffffff; --accent: #1b4d3e; --accent2: #b04a0a; --accent-lt: #e4eeea; --border: #e0dbd2; --serif: 'DM Serif Display', Georgia, serif; --sans: 'DM Sans', system-ui, sans-serif; color-scheme: light; }
+*, ::before, ::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: var(--sans); background: var(--surface); color: var(--ink); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+.wrap { max-width: 1000px; margin: 0 auto; padding: 0 2rem; }
+.rule { border: none; border-top: 1px solid var(--border); }
+.eyebrow { font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent2); font-weight: 500; margin-bottom: 0.5rem; display: block; }
+.sh { font-family: var(--serif); font-size: clamp(1.8rem, 3.5vw, 2.4rem); line-height: 1.15; color: var(--ink); margin-bottom: 0.7rem; font-weight: 400; }
+.ssub { font-size: 0.92rem; color: var(--ink-muted); line-height: 1.75; max-width: 560px; }
+nav { position: sticky; top: 0; z-index: 99; background: rgba(247, 245, 240, 0.94); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); padding: 0.9rem 0; }
+nav .ni { display: flex; justify-content: space-between; align-items: center; }
+nav .logo { font-family: var(--serif); font-size: 1.05rem; }
+nav ul { list-style: none; display: flex; gap: 2rem; }
+nav ul a { font-size: 0.77rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-muted); text-decoration: none; transition: color 0.2s; }
+nav ul a:hover { color: var(--accent); }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.hero { padding: 6.5rem 0 5rem; text-align: center; display: flex; flex-direction: column; align-items: center; }
+.hero-pills { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; margin-bottom: 1.4rem; }
+.hero-pill { font-size: 0.75rem; padding: 4px 13px; border-radius: 20px; border: 1px solid var(--border); color: var(--ink-mid); background: var(--card); }
+.hero h1 { font-family: var(--sans); font-size: clamp(2.8rem, 6.4vw, 4.8rem); font-weight: 700; line-height: 1.06; letter-spacing: -0.03em; color: var(--ink); margin-bottom: 0.7rem; }
+.hero-tagline { font-size: clamp(1.1rem, 2.2vw, 1.4rem); color: rgb(90, 125, 138); font-weight: 400; line-height: 1.4; margin-bottom: 1.2rem; }
+.hero-sub { font-size: 1rem; color: var(--ink-mid); line-height: 1.75; margin-bottom: 2.2rem; max-width: 600px; }
+.hero-stats { display: flex; gap: 2.5rem; flex-wrap: wrap; justify-content: center; margin-bottom: 2.4rem; }
+.hero-stats div { text-align: center; }
+.hero-stats .n { font-family: var(--serif); font-size: 2rem; line-height: 1; display: block; color: var(--accent); }
+.hero-stats .l { font-size: 0.75rem; color: var(--ink-muted); }
+.btns { display: flex; gap: 0.85rem; flex-wrap: wrap; justify-content: center; }
+.btn-p { display: inline-flex; align-items: center; gap: 7px; padding: 0.75rem 1.6rem; background: var(--ink); color: #fff; font-size: 0.84rem; font-weight: 500; border-radius: 30px; text-decoration: none; transition: background 0.2s, transform 0.15s; }
+.btn-p:hover { background: #333; transform: translateY(-1px); }
+.btn-o { display: inline-flex; align-items: center; gap: 7px; padding: 0.75rem 1.6rem; border: 1px solid var(--border); color: var(--ink); font-size: 0.84rem; font-weight: 500; border-radius: 30px; text-decoration: none; background: var(--card); transition: border-color 0.2s, color 0.2s, transform 0.15s; }
+.btn-o:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-1px); }
+.mq-wrap { background: var(--accent); padding: 0.85rem 0; overflow: hidden; }
+.mq-track { display: flex; gap: 2.5rem; white-space: nowrap; animation: mq 28s linear infinite; }
+.mq-track span { font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255, 255, 255, 0.6); flex-shrink: 0; }
+.mq-track .sep { color: rgba(255, 255, 255, 0.2); }
+@keyframes mq { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+section { padding: 5rem 0; }
+.cases { display: flex; flex-direction: column; gap: 1.8rem; margin-top: 2.5rem; }
+.case-card { background: var(--card); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; display: grid; grid-template-columns: 230px 1fr; transition: transform 0.2s, box-shadow 0.2s; }
+.case-card:hover { transform: translateY(-2px); box-shadow: rgba(0, 0, 0, 0.07) 0 8px 32px; }
+.case-left { background: var(--accent); padding: 2rem 1.6rem; display: flex; flex-direction: column; justify-content: space-between; }
+.cl-label { font-size: 0.67rem; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255, 255, 255, 0.55); margin-bottom: 0.5rem; }
+.cl-co { font-family: var(--serif); font-size: 1.2rem; color: #fff; line-height: 1.25; padding-bottom: 1.4rem; }
+.case-metrics { display: flex; flex-direction: column; gap: 0.8rem; }
+.cm .num { font-family: var(--serif); font-size: 1.75rem; color: #fff; line-height: 1; }
+.cm .lbl { font-size: 0.7rem; color: rgba(255, 255, 255, 0.6); margin-top: 2px; }
+.case-right { padding: 1.8rem 2rem; }
+.case-right h3 { font-family: var(--serif); font-size: 1.2rem; font-weight: 400; color: var(--ink); margin-bottom: 0.25rem; }
+.case-ctx { font-size: 0.81rem; color: var(--ink-muted); font-style: italic; margin-bottom: 1.2rem; }
+.case-right a { color: var(--accent); text-underline-offset: 3px; font-style: normal; }
+.case-right a:hover { color: var(--accent2); }
+.pas { display: flex; flex-direction: column; gap: 0.75rem; }
+.pas-block .lab { display: block; font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent2); font-weight: 500; margin-bottom: 0.2rem; }
+.pas-block p { font-size: 0.85rem; color: var(--ink-mid); line-height: 1.65; }
+.ctags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 1rem; }
+.ctag { font-size: 0.69rem; padding: 3px 8px; background: var(--surface); border: 1px solid var(--border); border-radius: 2px; color: var(--ink-muted); }
+.cc2 .case-left { background: rgb(61, 44, 30); }
+.cc3 .case-left { background: rgb(44, 58, 94); }
+.cc4 .case-left { background: rgb(27, 58, 92); }
+.arc { display: flex; border: 1px solid var(--border); border-radius: 6px; overflow: hidden; margin-top: 2rem; }
+.arc-step { flex: 1 1 0%; padding: 1rem 1.1rem 0.9rem; border-right: 1px solid var(--border); background: var(--card); transition: background 0.2s; }
+.arc-step:last-child { border-right: none; }
+.arc-step:hover { background: var(--accent-lt); }
+.arc-step .co { font-size: 0.77rem; font-weight: 500; color: var(--accent); margin-bottom: 3px; }
+.arc-step .rl { font-size: 0.73rem; color: var(--ink-muted); line-height: 1.4; }
+.arc-step .yr { font-size: 0.67rem; color: var(--ink-muted); opacity: 0.75; margin-top: 5px; }
+.built-block { padding: 1rem 0 4rem; }
+.built-head { text-align: center; max-width: 620px; margin: 0 auto 2.5rem; }
+.built-head .ssub { margin: 0 auto; }
+.built-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 1.4rem; }
+.built-card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1.8rem 2rem; transition: transform 0.2s, box-shadow 0.2s; }
+.built-card:hover { transform: translateY(-2px); box-shadow: rgba(0, 0, 0, 0.06) 0 8px 32px; }
+.built-featured { background: linear-gradient(160deg, #ffffff 0%, var(--accent-lt) 130%); border-color: rgb(207, 226, 218); }
+.built-tag { display: inline-block; font-size: 0.66rem; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 500; color: var(--accent); background: var(--accent-lt); padding: 3px 10px; border-radius: 20px; margin-bottom: 0.9rem; }
+.built-card h3 { font-family: var(--serif); font-size: 1.4rem; font-weight: 400; color: var(--ink); margin-bottom: 0.5rem; }
+.built-desc { font-size: 0.87rem; color: var(--ink-mid); line-height: 1.65; margin-bottom: 1rem; }
+.built-stack { list-style: none; display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 1.1rem; }
+.built-stack li { font-size: 0.72rem; padding: 3px 9px; background: var(--surface); border: 1px solid var(--border); border-radius: 2px; color: var(--ink-muted); }
+.built-note { font-size: 0.82rem; color: var(--ink-muted); line-height: 1.6; margin-bottom: 1.2rem; font-style: italic; }
+.built-note strong { color: var(--accent); font-style: normal; }
+.built-link { display: inline-block; padding: 0.55rem 1.2rem; background: var(--ink); color: #fff; font-size: 0.78rem; font-weight: 500; border-radius: 20px; text-decoration: none; }
+.sk-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 2.5rem; }
+.sk { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 1.3rem 1.2rem; transition: transform 0.2s; }
+.sk:hover { transform: translateY(-2px); }
+.sk h4 { font-size: 0.88rem; font-weight: 500; margin-bottom: 0.3rem; }
+.sk p { font-size: 0.8rem; color: var(--ink-muted); line-height: 1.6; }
+.sk-pills { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 0.6rem; }
+.sk-pills span { font-size: 0.68rem; padding: 2px 7px; background: var(--surface); border: 1px solid var(--border); border-radius: 2px; color: var(--ink-muted); }
+.cta-block { background: var(--ink); border-radius: 8px; padding: 3.5rem 3rem; margin: 0 0 5rem; display: grid; grid-template-columns: 1fr auto; gap: 2rem; align-items: center; }
+.cta-block h2 { font-family: var(--serif); font-weight: 400; font-size: clamp(1.6rem, 3vw, 2.1rem); color: #fff; margin-bottom: 0.5rem; line-height: 1.2; }
+.cta-block p { font-size: 0.87rem; color: rgba(255, 255, 255, 0.6); max-width: 440px; }
+.cta-block .mail { color: #fff; font-size: 0.85rem; margin-top: 0.8rem; }
+.btn-lt { display: inline-block; padding: 0.8rem 1.8rem; background: #fff; color: var(--ink); font-size: 0.83rem; font-weight: 500; border-radius: 30px; text-decoration: none; white-space: nowrap; }
+footer { border-top: 1px solid var(--border); padding: 1.8rem 0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+footer p { font-size: 0.77rem; color: var(--ink-muted); }
+footer .fl a { font-size: 0.77rem; color: var(--ink-muted); text-decoration: none; }
+@keyframes fadeUp { 0% { opacity: 0; transform: translateY(14px); } 100% { opacity: 1; transform: translateY(0); } }
+.fu { animation: fadeUp 0.6s ease both; }
+.d1 { animation-delay: 0.08s; } .d2 { animation-delay: 0.18s; } .d3 { animation-delay: 0.3s; }
+@media (prefers-reduced-motion: reduce) { .fu, .mq-track { animation: none; } html { scroll-behavior: auto; } }
+@media (max-width: 800px) {
+  .hero { padding: 4rem 0 3.5rem; }
+  .built-grid { grid-template-columns: 1fr; }
+  .arc { flex-direction: column; }
+  .arc-step { border-right: none; border-bottom: 1px solid var(--border); }
+  .arc-step:last-child { border-bottom: none; }
+  .case-card { grid-template-columns: 1fr; }
+  .case-left { padding: 1.4rem; }
+  .case-metrics { flex-direction: row; gap: 1.5rem; flex-wrap: wrap; }
+  .sk-grid { grid-template-columns: 1fr 1fr; }
+  .cta-block { grid-template-columns: 1fr; padding: 2.2rem 1.5rem; }
+  nav ul { display: none; }
+}
+@media (max-width: 520px) { .sk-grid { grid-template-columns: 1fr; } .wrap { padding: 0 1.2rem; } }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap ni">
+    <div class="logo">Soumyadeep Kanjilal</div>
+    <ul>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#journey">Journey</a></li>
+      <li><a href="#built">Built with AI</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="wrap">
+  <div class="hero">
+    <div class="hero-pills fu">
+      <span class="hero-pill">E-commerce &amp; D2C</span>
+      <span class="hero-pill">Growth</span>
+      <span class="hero-pill">Product Marketing</span>
+      <span class="hero-pill">AI</span>
+    </div>
+    <h1 class="fu d1">Growth &amp; Digital Marketer</h1>
+    <div class="hero-tagline fu d1">Building brands online, from launch to loyal customers</div>
+    <p class="hero-sub fu d2">13 years across consumer e-commerce, performance marketing and product launches. I have built a consumer brand's online business from zero, launched products across four regions, and helped brand and e-commerce teams scale their marketing with AI.</p>
+    <div class="hero-stats fu d2">
+      <div><span class="n">+70%</span><span class="l">Digital sales, built from zero</span></div>
+      <div><span class="n">&lt;5% to 90%</span><span class="l">Product adoption in 12 months</span></div>
+      <div><span class="n">4 regions</span><span class="l">Two products launched</span></div>
+    </div>
+    <div class="btns fu d3">
+      <a href="#work" class="btn-p">View my work ↓</a>
+      <a href="https://www.linkedin.com/in/soumyadeepkanjilal/" target="_blank" rel="noopener" class="btn-o">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg>
+        Connect on LinkedIn
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="mq-wrap" aria-hidden="true">
+  <div class="mq-track">
+    <span>E-commerce</span><span class="sep">·</span><span>D2C</span><span class="sep">·</span><span>Shopify &amp; Amazon</span><span class="sep">·</span><span>Performance Marketing</span><span class="sep">·</span><span>CRM &amp; Retention</span><span class="sep">·</span><span>Product Launches</span><span class="sep">·</span><span>Multi-market GTM</span><span class="sep">·</span><span>Brand &amp; Community</span><span class="sep">·</span><span>AI Marketing</span><span class="sep">·</span><span>Analytics</span><span class="sep">·</span>
+    <span>E-commerce</span><span class="sep">·</span><span>D2C</span><span class="sep">·</span><span>Shopify &amp; Amazon</span><span class="sep">·</span><span>Performance Marketing</span><span class="sep">·</span><span>CRM &amp; Retention</span><span class="sep">·</span><span>Product Launches</span><span class="sep">·</span><span>Multi-market GTM</span><span class="sep">·</span><span>Brand &amp; Community</span><span class="sep">·</span><span>AI Marketing</span><span class="sep">·</span><span>Analytics</span><span class="sep">·</span>
+  </div>
+</div>
+
+<section id="work">
+  <div class="wrap">
+    <span class="eyebrow">Selected work</span>
+    <h2 class="sh">Results, not just responsibilities.</h2>
+    <p class="ssub">Four moments where the work moved a number that mattered, from running a consumer brand online to launching products across regions.</p>
+
+    <div class="cases">
+
+      <div class="case-card cc2">
+        <div class="case-left">
+          <div>
+            <div class="cl-label">Classic Group · E-commerce &amp; D2C</div>
+            <div class="cl-co">Classic Coffee: online business from zero</div>
+          </div>
+          <div class="case-metrics">
+            <div class="cm"><div class="num">+70%</div><div class="lbl">Digital sales growth</div></div>
+            <div class="cm"><div class="num">1 to 2 days</div><div class="lbl">For brewing workshops to sell out</div></div>
+          </div>
+        </div>
+        <div class="case-right">
+          <h3>Building a consumer brand's online business, and a community around it</h3>
+          <div class="case-ctx">Classic Coffee · Shopify store, Amazon and events · one-person marketing team · <a href="https://www.classiccoffees.in/" target="_blank" rel="noopener">classiccoffees.in ↗</a></div>
+          <div class="pas">
+            <div class="pas-block"><span class="lab">The challenge</span><p>No online channel, no analytics and no marketing team, while also supporting the group's real estate and hospitality businesses.</p></div>
+            <div class="pas-block"><span class="lab">What I did</span><p>Launched the Shopify store and the brand's Amazon listings and ads. Ran brand and shopping campaigns against return-on-ad-spend targets and rebuilt SEO. Owned pricing and offers by product, forecast monthly and quarterly sales, and reviewed results with the Managing Director every month. Brought customers back through email, SMS and WhatsApp, worked across fulfilment, stock and returns, and built the group's first analytics setup. Then created the Coffee Brewing Workshop and ran events and booths end to end.</p></div>
+            <div class="pas-block"><span class="lab">The outcome</span><p>Digital sales grew 70%. The workshops sold out within one to two days of each announcement and became a recurring revenue stream that turned buyers into a community.</p></div>
+          </div>
+          <div class="ctags">
+            <span class="ctag">D2C</span><span class="ctag">Shopify</span><span class="ctag">Amazon</span><span class="ctag">Pricing &amp; Promotions</span><span class="ctag">CRM</span><span class="ctag">Events &amp; Community</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="case-card">
+        <div class="case-left">
+          <div>
+            <div class="cl-label">Pixis · AI marketing platform</div>
+            <div class="cl-co">Brand and e-commerce teams scaling with AI</div>
+          </div>
+          <div class="case-metrics">
+            <div class="cm"><div class="num">&lt;5% to 90%</div><div class="lbl">Product adoption in 12 months</div></div>
+            <div class="cm"><div class="num">100+</div><div class="lbl">Advertisers onboarded</div></div>
+          </div>
+        </div>
+        <div class="case-right">
+          <h3>Helping consumer brands adopt AI, and keep using it</h3>
+          <div class="case-ctx">Pixis · e-commerce and consumer brands including PharmEasy, Man Matters, Gynoveda and Lakmé</div>
+          <div class="pas">
+            <div class="pas-block"><span class="lab">The challenge</span><p>Advertisers were signed up to an AI platform for their online campaigns, but few used it day to day. The gap was trust and understanding, not the product.</p></div>
+            <div class="pas-block"><span class="lab">What I did</span><p>Helped e-commerce brands such as PharmEasy, Man Matters and Gynoveda adopt the platform, then worked with their marketing teams to optimise live Meta and Google campaigns on it, diagnosing what was underperforming and rebuilding account structure, audiences and creative. Rebuilt onboarding, in-product guidance, lifecycle messages and usage-triggered outreach. Fed what customers struggled with back to Product and Engineering.</p></div>
+            <div class="pas-block"><span class="lab">The outcome</span><p>Adoption rose from under 5% to 90% in 12 months, and customer feedback shaped features and naming that shipped to production.</p></div>
+          </div>
+          <div class="ctags">
+            <span class="ctag">Retention</span><span class="ctag">Lifecycle Marketing</span><span class="ctag">Meta &amp; Google Ads</span><span class="ctag">Consumer Brands</span><span class="ctag">AI</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="case-card cc4">
+        <div class="case-left">
+          <div>
+            <div class="cl-label">Pixis · Product launches</div>
+            <div class="cl-co">AdVance and AdRooms, four regions</div>
+          </div>
+          <div class="case-metrics">
+            <div class="cm"><div class="num">2</div><div class="lbl">Products launched</div></div>
+            <div class="cm"><div class="num">4</div><div class="lbl">Regions: NA, EMEA, APAC, LATAM</div></div>
+          </div>
+        </div>
+        <div class="case-right">
+          <h3>Launching across markets from one story</h3>
+          <div class="case-ctx">Pixis · positioning, messaging and go-to-market</div>
+          <div class="pas">
+            <div class="pas-block"><span class="lab">The challenge</span><p>Launch two new products at the same time across four regions, each with different customers, without the message fragmenting.</p></div>
+            <div class="pas-block"><span class="lab">What I did</span><p>Owned positioning and messaging for <a href="https://pixis.ai/solutions/performance-teams/" target="_blank" rel="noopener">AdVance ↗</a> and <a href="https://www.youtube.com/watch?v=xcIEK-OEkw0" target="_blank" rel="noopener">AdRooms ↗</a>, and built one message framework that Sales, Customer Success and each regional marketing team adapted for their market. Ran pre-launch campaigns to find the highest-intent customer segments before general availability.</p></div>
+            <div class="pas-block"><span class="lab">The outcome</span><p>Both products launched across all four regions from a single, consistent story, with the strongest segments identified before launch.</p></div>
+          </div>
+          <div class="ctags">
+            <span class="ctag">Positioning</span><span class="ctag">Multi-market Launch</span><span class="ctag">Go-to-market</span><span class="ctag">Segmentation</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="case-card cc3">
+        <div class="case-left">
+          <div>
+            <div class="cl-label">Social Panga · Consumer brands</div>
+            <div class="cl-co">Agency: digital for e-commerce and consumer clients</div>
+          </div>
+          <div class="case-metrics">
+            <div class="cm"><div class="num">25 to 30%</div><div class="lbl">Higher return across accounts</div></div>
+            <div class="cm"><div class="num">+40%</div><div class="lbl">Leads in a single campaign</div></div>
+          </div>
+        </div>
+        <div class="case-right">
+          <h3>Running digital for consumer brands, and generating demand faster than supply</h3>
+          <div class="case-ctx">White Teak Furniture, LifeStraw, Rapido, Sapphire International School</div>
+          <div class="pas">
+            <div class="pas-block"><span class="lab">The challenge</span><p>Deliver sales and leads for clients across very different categories, each answering to its own numbers.</p></div>
+            <div class="pas-block"><span class="lab">What I did</span><p>Ran search, paid social, SEO, content and analytics end to end, and kept iterating creative and media on live performance. For a school's mid-year intake, targeted high-intent local families and optimised creative mid-flight.</p></div>
+            <div class="pas-block"><span class="lab">The outcome</span><p>25 to 30% higher return across accounts. The school campaign lifted leads 40%, so fast that it was paused early because applications outran capacity.</p></div>
+          </div>
+          <div class="ctags">
+            <span class="ctag">E-commerce</span><span class="ctag">Paid Social</span><span class="ctag">Search</span><span class="ctag">Creative Optimisation</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<div class="wrap" id="journey" style="padding-top:3.5rem;">
+  <span class="eyebrow">Career journey</span>
+  <p style="font-size:.88rem;color:var(--ink-muted);">Agency craft → running a consumer brand online → product marketing → AI platform. From execution to strategy.</p>
+  <div class="arc">
+    <div class="arc-step"><div class="co">Social Panga</div><div class="rl">Agency: digital for e-commerce and consumer brands</div><div class="yr">2016 to 2018</div></div>
+    <div class="arc-step"><div class="co">Classic Group</div><div class="rl">E-commerce lead for Classic Coffee</div><div class="yr">2018 to 2019</div></div>
+    <div class="arc-step"><div class="co">RoundGlass (formerly Gympik)</div><div class="rl">Product marketing, B2B SaaS for gyms and clinics</div><div class="yr">2019 to 2021</div></div>
+    <div class="arc-step"><div class="co">Pixis</div><div class="rl">Product marketing and adoption, AI marketing platform</div><div class="yr">2021 to 2025</div></div>
+    <div class="arc-step"><div class="co">Independent</div><div class="rl">E-commerce advisory and AI marketing tools</div><div class="yr">2026 to now</div></div>
+  </div>
+</div>
+
+<section id="built">
+  <div class="wrap">
+    <div class="built-block">
+      <div class="built-head">
+        <span class="eyebrow">Proof, not a buzzword</span>
+        <h2 class="sh">I don't just use AI tools. I build with them.</h2>
+        <p class="ssub">From marketing dashboards to automated workflows, I build working tools myself, so an idea can be tested in days without waiting for engineers.</p>
+      </div>
+      <div class="built-grid">
+        <div class="built-card built-featured">
+          <div class="built-tag">Featured build</div>
+          <h3>SignalOps</h3>
+          <p class="built-desc">A live marketing intelligence dashboard that pulls scattered channel and market data into one view. Seven pages, automated daily data refresh, and no manual upkeep.</p>
+          <ul class="built-stack">
+            <li>Next.js + TypeScript</li>
+            <li>Tailwind + shadcn/ui</li>
+            <li>Recharts + TanStack Table</li>
+            <li>GitHub Actions pipeline</li>
+            <li>Deployed on Vercel</li>
+          </ul>
+          <p class="built-note">Built end to end with <strong>Claude Code</strong> and <strong>n8n</strong>, from design to a live, daily-refreshing deployment, with no prior Terminal experience going in.</p>
+          <a href="https://api-connect-market-research-dashboard.vercel.app/" target="_blank" rel="noopener" class="built-link">Live demo ↗</a>
+        </div>
+        <div class="built-card">
+          <div class="built-tag">Also built with AI</div>
+          <h3>Workflows and this site</h3>
+          <p class="built-desc">Automated research and reporting workflows that replace hours of manual work, and this portfolio, designed, written and deployed independently.</p>
+          <ul class="built-stack">
+            <li>n8n</li>
+            <li>Claude</li>
+            <li>HTML / CSS</li>
+            <li>Netlify</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<section id="skills">
+  <div class="wrap">
+    <span class="eyebrow">Capabilities</span>
+    <h2 class="sh">Where I'm strongest</h2>
+    <p class="ssub">Built through ownership, not just exposure.</p>
+    <div class="sk-grid">
+      <div class="sk">
+        <h4>E-commerce &amp; D2C</h4>
+        <p>Building and running online stores and marketplace presence, with ownership of pricing, promotions, merchandising and sales forecasts.</p>
+        <div class="sk-pills"><span>Shopify</span><span>Amazon</span><span>Merchandising</span><span>Forecasting</span></div>
+      </div>
+      <div class="sk">
+        <h4>Performance Marketing</h4>
+        <p>A decade running paid search, social and marketplace ads against return targets, with continuous creative and audience testing.</p>
+        <div class="sk-pills"><span>Meta Ads</span><span>Google Ads</span><span>Amazon Ads</span><span>Creative Testing</span></div>
+      </div>
+      <div class="sk">
+        <h4>CRM &amp; Retention</h4>
+        <p>Lifecycle journeys that bring customers back: onboarding, email, SMS and WhatsApp, and usage-triggered messages.</p>
+        <div class="sk-pills"><span>Lifecycle</span><span>Email &amp; SMS</span><span>WhatsApp</span><span>HubSpot</span></div>
+      </div>
+      <div class="sk">
+        <h4>Product Marketing &amp; Launches</h4>
+        <p>Positioning, messaging and go-to-market for launches across multiple markets, from one adaptable story.</p>
+        <div class="sk-pills"><span>Positioning</span><span>Launches</span><span>Multi-market GTM</span><span>Segmentation</span></div>
+      </div>
+      <div class="sk">
+        <h4>AI &amp; Automation</h4>
+        <p>Hands-on with AI marketing platforms, and building my own dashboards and automated workflows.</p>
+        <div class="sk-pills"><span>Claude Code</span><span>n8n</span><span>AI Platforms</span><span>Automation</span></div>
+      </div>
+      <div class="sk">
+        <h4>Analytics &amp; Strategy</h4>
+        <p>Setting up tracking and reporting from scratch, and turning data into decisions on budget, pricing and growth.</p>
+        <div class="sk-pills"><span>GA4 &amp; GTM</span><span>Attribution</span><span>Market Sizing</span><span>Break-even</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap" id="contact">
+  <div class="cta-block">
+    <div>
+      <h2>Let's talk about what you're building.</h2>
+      <p>Open to growth, e-commerce and product marketing leadership roles. Based in Bangalore and open to relocating, including to the Gulf, where I grew up.</p>
+      <p class="mail">soumyadeep.kanjilal89@gmail.com · +91 96115 10290</p>
+    </div>
+    <a href="mailto:soumyadeep.kanjilal89@gmail.com" class="btn-lt">Get in touch →</a>
+  </div>
+</div>
+
+<div class="wrap">
+  <footer>
+    <p>© 2026 Soumyadeep Kanjilal · Bangalore, India</p>
+    <div class="fl"><a href="https://www.linkedin.com/in/soumyadeepkanjilal/" target="_blank" rel="noopener">LinkedIn</a></div>
+  </footer>
+</div>
+
+</body>
+</html>
